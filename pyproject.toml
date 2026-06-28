@@ -1,7 +1,7 @@
 [project]
 name = "bilibili-subtitle"
 version = "0.1.0"
-description = "B站视频 AI 字幕下载工具"
+description = "B站视频字幕下载工具"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.9"

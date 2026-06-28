@@ -1,19 +1,18 @@
 [project]
-name = "bilibili-subtitle-summarize"
+name = "bilibili-subtitle"
 version = "0.1.0"
-description = "B站视频 → 下载AI字幕 → DeepSeek总结 → Markdown/Org/HTML"
+description = "B站视频 AI 字幕下载工具"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.9"
 dependencies = [
     "playwright>=1.40",
     "requests>=2.28",
-    "cryptography>=41",
 ]
 authors = [
     {name = "tiancaijb"}
 ]
-keywords = ["bilibili", "subtitle", "ai", "summarize", "deepseek"]
+keywords = ["bilibili", "subtitle", "ai"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -21,7 +20,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/tiancaijb/bilibili-subtitle-summarize"
+Homepage = "https://github.com/tiancaijb/bilibili-subtitle"
 
 [project.scripts]
-bili-summarize = "bilibili_subtitle.cli:main"
+bili-subtitle = "bilibili_subtitle.cli:main"

@@ -35,14 +35,48 @@ def _load_cookies(context) -> bool:
     return False
 
 
+def _qr_login(page, context=None, timeout=180):
+    """QR 扫码登录（非 WSL2 环境）。"""
+    print("🔐 打开 B 站登录页...", file=sys.stderr)
+    page.goto("https://passport.bilibili.com/login", wait_until="networkidle", timeout=30000)
+    page.wait_for_timeout(5000)
+    qr_path = SUBTITLE_DIR / "bilibili_qr.png"
+    SUBTITLE_DIR.mkdir(parents=True, exist_ok=True)
+    page.screenshot(path=str(qr_path), full_page=True)
+    win_path = os.popen(f"wslpath -w {qr_path}").read().strip() if os.path.exists("/usr/bin/wslpath") else str(qr_path)
+    print(f"📱 二维码: {win_path}", file=sys.stderr)
+    print(f"   请用 Bilibili App 扫码 (超时 {timeout}s)...", file=sys.stderr)
+    login_url = page.url
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        current = page.url
+        has_sess = page.evaluate("() => document.cookie.includes('SESSDATA=')")
+        if current != login_url and "login" not in current.lower():
+            cookies = page.context.cookies()
+            COOKIE_FILE.write_text(json.dumps(cookies, indent=2, ensure_ascii=False))
+            print(f"✅ 登录成功", file=sys.stderr)
+            return True
+        if has_sess:
+            page.goto("https://www.bilibili.com", wait_until="domcontentloaded", timeout=15000)
+            cookies = page.context.cookies()
+            COOKIE_FILE.write_text(json.dumps(cookies, indent=2, ensure_ascii=False))
+            print(f"✅ 登录成功（{len(cookies)} cookies）", file=sys.stderr)
+            return True
+        if int(time.time()) % 10 == 0:
+            print(f"   ⏳ 等待扫码...", file=sys.stderr)
+        time.sleep(2)
+    print("❌ 登录超时", file=sys.stderr)
+    return False
+
+
 def _windows_login() -> bool:
-    """在 Windows 上用 playwright-cli 弹出浏览器登录。"""
+    """在 Windows 上用 playwright-cli 弹出浏览器登录 (WSL2)。"""
     import subprocess
 
     print("🪟 在 Windows 上打开浏览器...", file=sys.stderr)
     print("   请在弹出的浏览器中扫码登录，然后关闭浏览器", file=sys.stderr)
 
-    # 步骤1：打开浏览器（阻塞，等用户关闭浏览器后才返回）
+    # 打开浏览器（阻塞，等用户关闭后继续）
     subprocess.run(
         ["powershell.exe", "-NoProfile", "-Command",
          f'$auth = "$env:USERPROFILE\\.bilibili_auth.json"; '
@@ -52,7 +86,7 @@ def _windows_login() -> bool:
         timeout=300,
     )
 
-    # 步骤2：读取 auth 文件
+    # 读取 auth 文件
     try:
         result = subprocess.run(
             ["powershell.exe", "-NoProfile",
@@ -61,23 +95,22 @@ def _windows_login() -> bool:
             capture_output=True, timeout=10,
         )
         raw = result.stdout
-        if raw:
-            for enc in ['utf-8-sig', 'utf-16', 'utf-8']:
-                try:
-                    txt = raw.decode(enc).strip()
-                    if txt:
-                        break
-                except:
-                    txt = ''
-            import re
-            txt = txt.lstrip('\ufeff')
-            if txt.startswith('{') or txt.startswith('['):
-                data = json.loads(txt)
-                cookies = data.get("cookies", data if isinstance(data, list) else [])
-                if any(c.get("name") == "SESSDATA" for c in cookies):
-                    COOKIE_FILE.write_text(json.dumps(cookies, indent=2, ensure_ascii=False))
-                    print(f"✅ 已加载 {len(cookies)} 个 cookies", file=sys.stderr)
-                    return True
+        txt = ""
+        for enc in ['utf-8-sig', 'utf-16', 'utf-8']:
+            try:
+                decoded = raw.decode(enc).strip()
+                if decoded:
+                    txt = decoded.lstrip('\ufeff')
+                    break
+            except:
+                pass
+        if txt and (txt.startswith('{') or txt.startswith('[')):
+            data = json.loads(txt)
+            cookies = data.get("cookies", data if isinstance(data, list) else [])
+            if any(c.get("name") == "SESSDATA" for c in cookies):
+                COOKIE_FILE.write_text(json.dumps(cookies, indent=2, ensure_ascii=False))
+                print(f"✅ 已加载 {len(cookies)} 个 cookies", file=sys.stderr)
+                return True
     except Exception as e:
         print(f"   读取失败: {e}", file=sys.stderr)
 
@@ -194,14 +227,40 @@ def _fetch_subtitle_meta(page, bvid: str) -> list:
     # 如果 subtitle_url 为空，等待页面自动加载字幕（拦截 aisubtitle.hdslb.com 请求）
     if not subtitle_url:
         print(f"  📡 等待字幕加载...", file=sys.stderr)
-        with page.expect_response(
-            lambda r: "aisubtitle.hdslb.com/bfs/subtitle" in r.url,
-            timeout=20000,
-        ) as resp_info:
-            # 等待页面自动触发字幕下载
-            page.wait_for_timeout(8000)
-        resp = resp_info.value
-        subtitle_url = resp.url
+        try:
+            with page.expect_response(
+                lambda r: "aisubtitle.hdslb.com/bfs/subtitle" in r.url,
+                timeout=20000,
+            ) as resp_info:
+                page.wait_for_timeout(8000)
+            resp = resp_info.value
+            subtitle_url = resp.url
+        except:
+            pass
+
+    # 如果还没有，从 player/wbi/v2 API 获取（新接口）
+    if not subtitle_url:
+        try:
+            wbi_url = f"https://api.bilibili.com/x/player/wbi/v2?aid={aid}&cid={cid}&bvid={bvid}"
+            data = page.evaluate(
+                "(url) => fetch(url, {credentials: 'include'}).then(r => r.json())",
+                wbi_url,
+            )
+            subs = data.get("data", {}).get("subtitle", {}).get("subtitles", [])
+            for s in subs:
+                lan = s.get("lan", "")
+                if "ai" in lan and "zh" in lan:
+                    subtitle_url = s.get("subtitle_url", "") or subtitle_url
+                    break
+            if not subtitle_url:
+                for s in subs:
+                    if "zh" in s.get("lan", ""):
+                        subtitle_url = s.get("subtitle_url", "") or subtitle_url
+                        break
+                if not subtitle_url and subs:
+                    subtitle_url = subs[0].get("subtitle_url", "") or subtitle_url
+        except Exception as e:
+            print(f"  ⚠ wbi/v2 接口失败: {e}", file=sys.stderr)
 
     return {
         "aid": aid, "cid": cid, "title": title,

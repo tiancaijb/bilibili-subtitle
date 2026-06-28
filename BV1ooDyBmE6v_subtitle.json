@@ -1,0 +1,2769 @@
+{
+  "bvid": "BV1ooDyBmE6v",
+  "title": "BV1ooDyBmE6v",
+  "cid": 37424595579,
+  "aid": 116386399783727,
+  "language": "中文",
+  "subtitles": [
+    {
+      "from": 0.0,
+      "to": 2.72,
+      "sid": 1,
+      "location": 2,
+      "content": "这套流程可以让AI自动操作浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 2.72,
+      "to": 5.82,
+      "sid": 2,
+      "location": 2,
+      "content": "代替你完成一切机械重复性的工作",
+      "music": 0.0
+    },
+    {
+      "from": 5.82,
+      "to": 7.3,
+      "sid": 3,
+      "location": 2,
+      "content": "而且特别的省token",
+      "music": 0.0
+    },
+    {
+      "from": 7.3,
+      "to": 10.1,
+      "sid": 4,
+      "location": 2,
+      "content": "很多工作流甚至全程不需要AI参与",
+      "music": 0.0
+    },
+    {
+      "from": 10.1,
+      "to": 12.56,
+      "sid": 5,
+      "location": 2,
+      "content": "0token就能把自动化任务跑起来",
+      "music": 0.0
+    },
+    {
+      "from": 12.56,
+      "to": 15.44,
+      "sid": 6,
+      "location": 2,
+      "content": "比如可以0token抓取电商网站评论",
+      "music": 0.0
+    },
+    {
+      "from": 15.44,
+      "to": 17.08,
+      "sid": 7,
+      "location": 2,
+      "content": "导出成CSV文件",
+      "music": 0.0
+    },
+    {
+      "from": 17.08,
+      "to": 19.34,
+      "sid": 8,
+      "location": 2,
+      "content": "自动把markdown文章发布到X",
+      "music": 0.0
+    },
+    {
+      "from": 19.34,
+      "to": 23.12,
+      "sid": 9,
+      "location": 2,
+      "content": "还有对自己开发的web app进行AI自动化测试",
+      "music": 0.0
+    },
+    {
+      "from": 23.12,
+      "to": 25.54,
+      "sid": 10,
+      "location": 2,
+      "content": "我们并不需要懂浏览器的相关知识",
+      "music": 0.0
+    },
+    {
+      "from": 25.54,
+      "to": 27.76,
+      "sid": 11,
+      "location": 2,
+      "content": "只用自然语言就能完成这些任务",
+      "music": 0.0
+    },
+    {
+      "from": 27.76,
+      "to": 29.32,
+      "sid": 12,
+      "location": 2,
+      "content": "本期视频我们是使用的",
+      "music": 0.0
+    },
+    {
+      "from": 29.32,
+      "to": 31.96,
+      "sid": 13,
+      "location": 2,
+      "content": "agent的框架是cloud code或者codex",
+      "music": 0.0
+    },
+    {
+      "from": 31.96,
+      "to": 34.8,
+      "sid": 14,
+      "location": 2,
+      "content": "浏览器自动化方案是playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 34.8,
+      "to": 36.34,
+      "sid": 15,
+      "location": 2,
+      "content": "搭配配套的skill",
+      "music": 0.0
+    },
+    {
+      "from": 36.34,
+      "to": 40.32,
+      "sid": 16,
+      "location": 2,
+      "content": "playwright CLI是26年初微软开源的全新浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 40.32,
+      "to": 43.18,
+      "sid": 17,
+      "location": 2,
+      "content": "自动化工具根据官方的基准测试",
+      "music": 0.0
+    },
+    {
+      "from": 43.18,
+      "to": 47.29,
+      "sid": 18,
+      "location": 2,
+      "content": "playwright CLI比起传统的PLAYRIGHTMCP方案差不多",
+      "music": 0.0
+    },
+    {
+      "from": 47.29,
+      "to": 49.51,
+      "sid": 19,
+      "location": 2,
+      "content": "能够减少四倍的token消耗",
+      "music": 0.0
+    },
+    {
+      "from": 49.51,
+      "to": 50.73,
+      "sid": 20,
+      "location": 2,
+      "content": "工具搭建好以后",
+      "music": 0.0
+    },
+    {
+      "from": 50.73,
+      "to": 54.28,
+      "sid": 21,
+      "location": 2,
+      "content": "我们可以把很多固定的工作流程沉淀成skills",
+      "music": 0.0
+    },
+    {
+      "from": 54.28,
+      "to": 56.96,
+      "sid": 22,
+      "location": 2,
+      "content": "让AI能够又快又省的完成任务",
+      "music": 0.0
+    },
+    {
+      "from": 56.96,
+      "to": 57.88,
+      "sid": 23,
+      "location": 2,
+      "content": "甚至熟练后",
+      "music": 0.0
+    },
+    {
+      "from": 57.88,
+      "to": 61.06,
+      "sid": 24,
+      "location": 2,
+      "content": "你会发现很多固定流程甚至不需要AI参与",
+      "music": 0.0
+    },
+    {
+      "from": 61.06,
+      "to": 63.56,
+      "sid": 25,
+      "location": 2,
+      "content": "只需要让AI编写好一个固定的脚本",
+      "music": 0.0
+    },
+    {
+      "from": 63.56,
+      "to": 65.7,
+      "sid": 26,
+      "location": 2,
+      "content": "就可以0token全自动完成工作",
+      "music": 0.0
+    },
+    {
+      "from": 65.7,
+      "to": 66.72,
+      "sid": 27,
+      "location": 2,
+      "content": "好废话不多说",
+      "music": 0.0
+    },
+    {
+      "from": 66.72,
+      "to": 68.49,
+      "sid": 28,
+      "location": 2,
+      "content": "我们直接开始",
+      "music": 0.0
+    },
+    {
+      "from": 68.85,
+      "to": 70.17,
+      "sid": 29,
+      "location": 2,
+      "content": "在开始之前",
+      "music": 0.0
+    },
+    {
+      "from": 70.17,
+      "to": 73.05,
+      "sid": 30,
+      "location": 2,
+      "content": "我们需要先确保电脑上安装了node js",
+      "music": 0.0
+    },
+    {
+      "from": 73.05,
+      "to": 74.17,
+      "sid": 31,
+      "location": 2,
+      "content": "如果没有安装过",
+      "music": 0.0
+    },
+    {
+      "from": 74.17,
+      "to": 75.86,
+      "sid": 32,
+      "location": 2,
+      "content": "可以来到node js的官网",
+      "music": 0.0
+    },
+    {
+      "from": 75.86,
+      "to": 78.78,
+      "sid": 33,
+      "location": 2,
+      "content": "根据自己的操作系统下载对应的安装包",
+      "music": 0.0
+    },
+    {
+      "from": 78.78,
+      "to": 80.76,
+      "sid": 34,
+      "location": 2,
+      "content": "然后我们打开一个命令行终端",
+      "music": 0.0
+    },
+    {
+      "from": 80.76,
+      "to": 81.7,
+      "sid": 35,
+      "location": 2,
+      "content": "输入这个命令",
+      "music": 0.0
+    },
+    {
+      "from": 81.7,
+      "to": 83.08,
+      "sid": 36,
+      "location": 2,
+      "content": "安装playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 83.08,
+      "to": 84.12,
+      "sid": 37,
+      "location": 2,
+      "content": "安装完成",
+      "music": 0.0
+    },
+    {
+      "from": 84.12,
+      "to": 87.5,
+      "sid": 38,
+      "location": 2,
+      "content": "下一步我们要确保电脑上安装了chrome浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 87.5,
+      "to": 89.52,
+      "sid": 39,
+      "location": 2,
+      "content": "如果是edge浏览器也可以",
+      "music": 0.0
+    },
+    {
+      "from": 89.52,
+      "to": 91.86,
+      "sid": 40,
+      "location": 2,
+      "content": "不过最好还是推荐使用chrome好",
+      "music": 0.0
+    },
+    {
+      "from": 91.86,
+      "to": 93.42,
+      "sid": 41,
+      "location": 2,
+      "content": "这样准备工作就完成了",
+      "music": 0.0
+    },
+    {
+      "from": 93.42,
+      "to": 94.42,
+      "sid": 42,
+      "location": 2,
+      "content": "我们来测试一下",
+      "music": 0.0
+    },
+    {
+      "from": 94.42,
+      "to": 95.9,
+      "sid": 43,
+      "location": 2,
+      "content": "我们可以使用这个命令",
+      "music": 0.0
+    },
+    {
+      "from": 95.9,
+      "to": 98.92,
+      "sid": 44,
+      "location": 2,
+      "content": "使用playwright CLI操作chrome浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 98.92,
+      "to": 100.26,
+      "sid": 45,
+      "location": 2,
+      "content": "打开谷歌的官网",
+      "music": 0.0
+    },
+    {
+      "from": 100.26,
+      "to": 104.02,
+      "sid": 46,
+      "location": 2,
+      "content": "最后一个参数headed表示使用的是有头浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 104.02,
+      "to": 105.38,
+      "sid": 47,
+      "location": 2,
+      "content": "如果不加这个参数",
+      "music": 0.0
+    },
+    {
+      "from": 105.38,
+      "to": 107.86,
+      "sid": 48,
+      "location": 2,
+      "content": "playwright默认使用的是无头浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 107.86,
+      "to": 110.6,
+      "sid": 49,
+      "location": 2,
+      "content": "无头浏览器会在后台静默运行",
+      "music": 0.0
+    },
+    {
+      "from": 110.6,
+      "to": 111.88,
+      "sid": 50,
+      "location": 2,
+      "content": "虽然比较省内存",
+      "music": 0.0
+    },
+    {
+      "from": 111.88,
+      "to": 113.86,
+      "sid": 51,
+      "location": 2,
+      "content": "但是我们看不到浏览器的页面",
+      "music": 0.0
+    },
+    {
+      "from": 113.86,
+      "to": 115.3,
+      "sid": 52,
+      "location": 2,
+      "content": "所以为了方便调试",
+      "music": 0.0
+    },
+    {
+      "from": 115.3,
+      "to": 116.94,
+      "sid": 53,
+      "location": 2,
+      "content": "我们一般加上这个参数",
+      "music": 0.0
+    },
+    {
+      "from": 116.94,
+      "to": 118.4,
+      "sid": 54,
+      "location": 2,
+      "content": "杠杠headed回车",
+      "music": 0.0
+    },
+    {
+      "from": 118.4,
+      "to": 122.18,
+      "sid": 55,
+      "location": 2,
+      "content": "playwright CLI自动操作chrome打开了我们要的网页",
+      "music": 0.0
+    },
+    {
+      "from": 122.18,
+      "to": 124.1,
+      "sid": 56,
+      "location": 2,
+      "content": "我们在控制台这边可以看到",
+      "music": 0.0
+    },
+    {
+      "from": 124.1,
+      "to": 127.34,
+      "sid": 57,
+      "location": 2,
+      "content": "playwright CLI只是输出了一个简洁的网页摘要",
+      "music": 0.0
+    },
+    {
+      "from": 127.34,
+      "to": 130.08,
+      "sid": 58,
+      "location": 2,
+      "content": "而没有返回整个网页的全部盗墓结构",
+      "music": 0.0
+    },
+    {
+      "from": 130.08,
+      "to": 132.74,
+      "sid": 59,
+      "location": 2,
+      "content": "下面附带了一个网页结构的文件地址",
+      "music": 0.0
+    },
+    {
+      "from": 132.74,
+      "to": 136.0,
+      "sid": 60,
+      "location": 2,
+      "content": "aa agent如果需要更详细的网页结构信息",
+      "music": 0.0
+    },
+    {
+      "from": 136.0,
+      "to": 138.3,
+      "sid": 61,
+      "location": 2,
+      "content": "就可以选择读取这个快照文件",
+      "music": 0.0
+    },
+    {
+      "from": 138.3,
+      "to": 139.86,
+      "sid": 62,
+      "location": 2,
+      "content": "获取更详细的信息",
+      "music": 0.0
+    },
+    {
+      "from": 139.86,
+      "to": 142.02,
+      "sid": 63,
+      "location": 2,
+      "content": "如果不需要就可以选择不读取",
+      "music": 0.0
+    },
+    {
+      "from": 142.02,
+      "to": 144.18,
+      "sid": 64,
+      "location": 2,
+      "content": "这也就是为什么playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 144.18,
+      "to": 147.38,
+      "sid": 65,
+      "location": 2,
+      "content": "比起MCP更节省上下文的秘密所在",
+      "music": 0.0
+    },
+    {
+      "from": 147.38,
+      "to": 150.68,
+      "sid": 66,
+      "location": 2,
+      "content": "因为MCP是把网页内容全部塞进上下文",
+      "music": 0.0
+    },
+    {
+      "from": 150.68,
+      "to": 153.6,
+      "sid": 67,
+      "location": 2,
+      "content": "而playwright CLI可以由AI按需读取",
+      "music": 0.0
+    },
+    {
+      "from": 153.6,
+      "to": 156.52,
+      "sid": 68,
+      "location": 2,
+      "content": "同样这个命令也体现了按需加载的思路",
+      "music": 0.0
+    },
+    {
+      "from": 156.52,
+      "to": 158.46,
+      "sid": 69,
+      "location": 2,
+      "content": "screen shot是给浏览器截图",
+      "music": 0.0
+    },
+    {
+      "from": 158.46,
+      "to": 159.92,
+      "sid": 70,
+      "location": 2,
+      "content": "我们看到截屏的时候",
+      "music": 0.0
+    },
+    {
+      "from": 159.92,
+      "to": 162.3,
+      "sid": 71,
+      "location": 2,
+      "content": "它还是以一个PNG的文件的形式",
+      "music": 0.0
+    },
+    {
+      "from": 162.3,
+      "to": 164.42,
+      "sid": 72,
+      "location": 2,
+      "content": "存放在了电脑的本地磁盘上",
+      "music": 0.0
+    },
+    {
+      "from": 164.42,
+      "to": 166.28,
+      "sid": 73,
+      "location": 2,
+      "content": "由AI决定是否来读取",
+      "music": 0.0
+    },
+    {
+      "from": 166.28,
+      "to": 169.94,
+      "sid": 74,
+      "location": 2,
+      "content": "而不是像MCP那样直接把图片代入AA的上下文",
+      "music": 0.0
+    },
+    {
+      "from": 169.94,
+      "to": 171.92,
+      "sid": 75,
+      "location": 2,
+      "content": "我们再介绍一个重要的参数",
+      "music": 0.0
+    },
+    {
+      "from": 171.92,
+      "to": 173.18,
+      "sid": 76,
+      "location": 2,
+      "content": "就是杠杠",
+      "music": 0.0
+    },
+    {
+      "from": 173.18,
+      "to": 176.38,
+      "sid": 77,
+      "location": 2,
+      "content": "stant persistent表示把cookie登录状态",
+      "music": 0.0
+    },
+    {
+      "from": 176.38,
+      "to": 179.2,
+      "sid": 78,
+      "location": 2,
+      "content": "本地存储之类的数据写到磁盘里面",
+      "music": 0.0
+    },
+    {
+      "from": 179.2,
+      "to": 181.44,
+      "sid": 79,
+      "location": 2,
+      "content": "下次使用的时候继续拿出来用",
+      "music": 0.0
+    },
+    {
+      "from": 181.44,
+      "to": 183.68,
+      "sid": 80,
+      "location": 2,
+      "content": "这样就不需要每次都重新登录了",
+      "music": 0.0
+    },
+    {
+      "from": 183.68,
+      "to": 186.22,
+      "sid": 81,
+      "location": 2,
+      "content": "比如这里我带着persistent执行一下",
+      "music": 0.0
+    },
+    {
+      "from": 186.22,
+      "to": 189.06,
+      "sid": 82,
+      "location": 2,
+      "content": "因为我之前登录过我们打开的谷歌首页",
+      "music": 0.0
+    },
+    {
+      "from": 189.06,
+      "to": 191.14,
+      "sid": 83,
+      "location": 2,
+      "content": "就变成了已经登录过的状态了",
+      "music": 0.0
+    },
+    {
+      "from": 191.14,
+      "to": 194.7,
+      "sid": 84,
+      "location": 2,
+      "content": "到这里我们就介绍完了playwright CLI的基础使用",
+      "music": 0.0
+    },
+    {
+      "from": 194.7,
+      "to": 196.84,
+      "sid": 85,
+      "location": 2,
+      "content": "下一步我们就把它接入AAAENT",
+      "music": 0.0
+    },
+    {
+      "from": 196.84,
+      "to": 200.74,
+      "sid": 86,
+      "location": 2,
+      "content": "本期视频主要使用的AH的框架是cloud code和codex",
+      "music": 0.0
+    },
+    {
+      "from": 200.74,
+      "to": 201.42,
+      "sid": 87,
+      "location": 2,
+      "content": "爬爬虾",
+      "music": 0.0
+    },
+    {
+      "from": 201.42,
+      "to": 205.0,
+      "sid": 88,
+      "location": 2,
+      "content": "之前有很多期视频介绍codex或者cloud code了",
+      "music": 0.0
+    },
+    {
+      "from": 205.0,
+      "to": 206.26,
+      "sid": 89,
+      "location": 2,
+      "content": "这里我就不赘述了",
+      "music": 0.0
+    },
+    {
+      "from": 206.26,
+      "to": 209.56,
+      "sid": 90,
+      "location": 2,
+      "content": "playwright CLI是一个新诞生的命令行工具",
+      "music": 0.0
+    },
+    {
+      "from": 209.56,
+      "to": 212.12,
+      "sid": 91,
+      "location": 2,
+      "content": "AI并不知道该如何使用这些命令",
+      "music": 0.0
+    },
+    {
+      "from": 212.12,
+      "to": 215.48,
+      "sid": 92,
+      "location": 2,
+      "content": "所以我们需要给搭配skills来一起使用",
+      "music": 0.0
+    },
+    {
+      "from": 215.48,
+      "to": 217.82,
+      "sid": 93,
+      "location": 2,
+      "content": "playwright CLI作为技术底座",
+      "music": 0.0
+    },
+    {
+      "from": 217.82,
+      "to": 219.74,
+      "sid": 94,
+      "location": 2,
+      "content": "而skills作为说明文档",
+      "music": 0.0
+    },
+    {
+      "from": 219.74,
+      "to": 222.2,
+      "sid": 95,
+      "location": 2,
+      "content": "CLI加skills搭配起来使用",
+      "music": 0.0
+    },
+    {
+      "from": 222.2,
+      "to": 224.64,
+      "sid": 96,
+      "location": 2,
+      "content": "就可以取代传统的MCP方式",
+      "music": 0.0
+    },
+    {
+      "from": 224.64,
+      "to": 227.02,
+      "sid": 97,
+      "location": 2,
+      "content": "这也是最近的一个技术发展趋势",
+      "music": 0.0
+    },
+    {
+      "from": 227.02,
+      "to": 228.96,
+      "sid": 98,
+      "location": 2,
+      "content": "我们先新建一个项目文件夹",
+      "music": 0.0
+    },
+    {
+      "from": 228.96,
+      "to": 229.98,
+      "sid": 99,
+      "location": 2,
+      "content": "打开这个文件夹",
+      "music": 0.0
+    },
+    {
+      "from": 229.98,
+      "to": 231.2,
+      "sid": 100,
+      "location": 2,
+      "content": "打开命令行终端",
+      "music": 0.0
+    },
+    {
+      "from": 231.2,
+      "to": 232.62,
+      "sid": 101,
+      "location": 2,
+      "content": "我们直接输入这个命令",
+      "music": 0.0
+    },
+    {
+      "from": 232.62,
+      "to": 234.4,
+      "sid": 102,
+      "location": 2,
+      "content": "给文件夹里面安装skills",
+      "music": 0.0
+    },
+    {
+      "from": 234.4,
+      "to": 236.46,
+      "sid": 103,
+      "location": 2,
+      "content": "这样skills就安装完成了",
+      "music": 0.0
+    },
+    {
+      "from": 236.46,
+      "to": 239.62,
+      "sid": 104,
+      "location": 2,
+      "content": "它放到了我们新建的项目文件夹的这个目录下",
+      "music": 0.0
+    },
+    {
+      "from": 239.62,
+      "to": 241.76,
+      "sid": 105,
+      "location": 2,
+      "content": "然后我们就可以启动cloud code",
+      "music": 0.0
+    },
+    {
+      "from": 241.76,
+      "to": 243.74,
+      "sid": 106,
+      "location": 2,
+      "content": "我来询问他你有哪些skills",
+      "music": 0.0
+    },
+    {
+      "from": 243.74,
+      "to": 246.62,
+      "sid": 107,
+      "location": 2,
+      "content": "它可以成功的读取到playwright CLI技能",
+      "music": 0.0
+    },
+    {
+      "from": 246.62,
+      "to": 249.12,
+      "sid": 108,
+      "location": 2,
+      "content": "这样我们就成功的把它接入了cloud code",
+      "music": 0.0
+    },
+    {
+      "from": 249.12,
+      "to": 251.36,
+      "sid": 109,
+      "location": 2,
+      "content": "接下来我们来看另外一个A证的框架",
+      "music": 0.0
+    },
+    {
+      "from": 251.36,
+      "to": 252.22,
+      "sid": 110,
+      "location": 2,
+      "content": "就是codex",
+      "music": 0.0
+    },
+    {
+      "from": 252.22,
+      "to": 254.36,
+      "sid": 111,
+      "location": 2,
+      "content": "我们只需要在项目目录里面",
+      "music": 0.0
+    },
+    {
+      "from": 254.36,
+      "to": 256.64,
+      "sid": 112,
+      "location": 2,
+      "content": "把存放skills文件夹的名字",
+      "music": 0.0
+    },
+    {
+      "from": 256.64,
+      "to": 261.079,
+      "sid": 113,
+      "location": 2,
+      "content": "从点cloud改成点codex来适配codex就完成了",
+      "music": 0.0
+    },
+    {
+      "from": 261.079,
+      "to": 264.279,
+      "sid": 114,
+      "location": 2,
+      "content": "然后我们还是在这个目录里面打开codex",
+      "music": 0.0
+    },
+    {
+      "from": 264.279,
+      "to": 267.579,
+      "sid": 115,
+      "location": 2,
+      "content": "在codex里面可以输入命令斜线skills",
+      "music": 0.0
+    },
+    {
+      "from": 267.579,
+      "to": 270.04,
+      "sid": 116,
+      "location": 2,
+      "content": "我们看到这里列出了playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 270.04,
+      "to": 272.14,
+      "sid": 117,
+      "location": 2,
+      "content": "在codex里面也配置完成了",
+      "music": 0.0
+    },
+    {
+      "from": 272.14,
+      "to": 274.82,
+      "sid": 118,
+      "location": 2,
+      "content": "我们在codex里面测试一下基础用法",
+      "music": 0.0
+    },
+    {
+      "from": 274.82,
+      "to": 276.64,
+      "sid": 119,
+      "location": 2,
+      "content": "我让他使用playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 276.64,
+      "to": 277.98,
+      "sid": 120,
+      "location": 2,
+      "content": "加上这两个参数",
+      "music": 0.0
+    },
+    {
+      "from": 277.98,
+      "to": 278.92,
+      "sid": 121,
+      "location": 2,
+      "content": "打开GRO",
+      "music": 0.0
+    },
+    {
+      "from": 278.92,
+      "to": 280.86,
+      "sid": 122,
+      "location": 2,
+      "content": "问问今天青岛的天气怎么样",
+      "music": 0.0
+    },
+    {
+      "from": 280.86,
+      "to": 282.48,
+      "sid": 123,
+      "location": 2,
+      "content": "AI成功的打开了浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 282.48,
+      "to": 283.86,
+      "sid": 124,
+      "location": 2,
+      "content": "来到了GRC的首页",
+      "music": 0.0
+    },
+    {
+      "from": 283.86,
+      "to": 285.44,
+      "sid": 125,
+      "location": 2,
+      "content": "帮我们自动输入了问题",
+      "music": 0.0
+    },
+    {
+      "from": 285.44,
+      "to": 286.62,
+      "sid": 126,
+      "location": 2,
+      "content": "自动点击了回车",
+      "music": 0.0
+    },
+    {
+      "from": 286.62,
+      "to": 287.52,
+      "sid": 127,
+      "location": 2,
+      "content": "拿到了结果",
+      "music": 0.0
+    },
+    {
+      "from": 287.52,
+      "to": 289.54,
+      "sid": 128,
+      "location": 2,
+      "content": "最终成功打印到了控制台上",
+      "music": 0.0
+    },
+    {
+      "from": 289.54,
+      "to": 291.34,
+      "sid": 129,
+      "location": 2,
+      "content": "任务就完成了",
+      "music": 0.0
+    },
+    {
+      "from": 291.62,
+      "to": 293.74,
+      "sid": 130,
+      "location": 2,
+      "content": "我们来看一个复杂一些的例子",
+      "music": 0.0
+    },
+    {
+      "from": 293.74,
+      "to": 297.68,
+      "sid": 131,
+      "location": 2,
+      "content": "使用playwright co i查看这个商品前100条评论",
+      "music": 0.0
+    },
+    {
+      "from": 297.68,
+      "to": 300.02,
+      "sid": 132,
+      "location": 2,
+      "content": "然后保存到一个CSV文件里面",
+      "music": 0.0
+    },
+    {
+      "from": 300.02,
+      "to": 303.52,
+      "sid": 133,
+      "location": 2,
+      "content": "我们看到AI还是先学习playwright CLI技能",
+      "music": 0.0
+    },
+    {
+      "from": 303.52,
+      "to": 304.76,
+      "sid": 134,
+      "location": 2,
+      "content": "然后打开了商品",
+      "music": 0.0
+    },
+    {
+      "from": 304.76,
+      "to": 307.04,
+      "sid": 135,
+      "location": 2,
+      "content": "第一次运行总是磕磕绊绊的",
+      "music": 0.0
+    },
+    {
+      "from": 307.04,
+      "to": 307.86,
+      "sid": 136,
+      "location": 2,
+      "content": "不过没关系",
+      "music": 0.0
+    },
+    {
+      "from": 307.86,
+      "to": 309.08,
+      "sid": 137,
+      "location": 2,
+      "content": "我们让他自己探索",
+      "music": 0.0
+    },
+    {
+      "from": 309.08,
+      "to": 310.84,
+      "sid": 138,
+      "location": 2,
+      "content": "自己寻找解决思路",
+      "music": 0.0
+    },
+    {
+      "from": 310.84,
+      "to": 312.2,
+      "sid": 139,
+      "location": 2,
+      "content": "尝试了很多方案",
+      "music": 0.0
+    },
+    {
+      "from": 312.2,
+      "to": 313.54,
+      "sid": 140,
+      "location": 2,
+      "content": "也浪费了不少token",
+      "music": 0.0
+    },
+    {
+      "from": 313.54,
+      "to": 314.4,
+      "sid": 141,
+      "location": 2,
+      "content": "我们看到这里",
+      "music": 0.0
+    },
+    {
+      "from": 314.4,
+      "to": 317.04,
+      "sid": 142,
+      "location": 2,
+      "content": "显示用掉了41%的上下文窗口",
+      "music": 0.0
+    },
+    {
+      "from": 317.04,
+      "to": 318.36,
+      "sid": 143,
+      "location": 2,
+      "content": "最后成功完成了任务",
+      "music": 0.0
+    },
+    {
+      "from": 318.36,
+      "to": 320.64,
+      "sid": 144,
+      "location": 2,
+      "content": "帮我们获取到了这个CSV文件",
+      "music": 0.0
+    },
+    {
+      "from": 320.64,
+      "to": 322.82,
+      "sid": 145,
+      "location": 2,
+      "content": "成功抓取到了这么100条数据",
+      "music": 0.0
+    },
+    {
+      "from": 322.82,
+      "to": 324.02,
+      "sid": 146,
+      "location": 2,
+      "content": "我们有两种方式",
+      "music": 0.0
+    },
+    {
+      "from": 324.02,
+      "to": 326.56,
+      "sid": 147,
+      "location": 2,
+      "content": "可以把这个流程总结并且保存下来",
+      "music": 0.0
+    },
+    {
+      "from": 326.56,
+      "to": 328.84,
+      "sid": 148,
+      "location": 2,
+      "content": "让他下一次执行变得更加丝滑",
+      "music": 0.0
+    },
+    {
+      "from": 328.84,
+      "to": 329.84,
+      "sid": 149,
+      "location": 2,
+      "content": "更加省token",
+      "music": 0.0
+    },
+    {
+      "from": 329.84,
+      "to": 331.24,
+      "sid": 150,
+      "location": 2,
+      "content": "我们先来看第一个方式",
+      "music": 0.0
+    },
+    {
+      "from": 331.24,
+      "to": 333.58,
+      "sid": 151,
+      "location": 2,
+      "content": "就是把这个过程保存成一个skill",
+      "music": 0.0
+    },
+    {
+      "from": 333.58,
+      "to": 334.88,
+      "sid": 152,
+      "location": 2,
+      "content": "这里输入提示词",
+      "music": 0.0
+    },
+    {
+      "from": 334.88,
+      "to": 336.34,
+      "sid": 153,
+      "location": 2,
+      "content": "创建一个新的skill",
+      "music": 0.0
+    },
+    {
+      "from": 336.34,
+      "to": 338.56,
+      "sid": 154,
+      "location": 2,
+      "content": "把刚才打开网站查看评论",
+      "music": 0.0
+    },
+    {
+      "from": 338.56,
+      "to": 340.62,
+      "sid": 155,
+      "location": 2,
+      "content": "并且保存评论的全过程",
+      "music": 0.0
+    },
+    {
+      "from": 340.62,
+      "to": 342.64,
+      "sid": 156,
+      "location": 2,
+      "content": "还有遇到的坑都提炼出来",
+      "music": 0.0
+    },
+    {
+      "from": 342.64,
+      "to": 344.14,
+      "sid": 157,
+      "location": 2,
+      "content": "保存到这个skills里面",
+      "music": 0.0
+    },
+    {
+      "from": 344.14,
+      "to": 346.16,
+      "sid": 158,
+      "location": 2,
+      "content": "后面我只要让你保存评论",
+      "music": 0.0
+    },
+    {
+      "from": 346.16,
+      "to": 348.38,
+      "sid": 159,
+      "location": 2,
+      "content": "你就能调用这个skill完成任务",
+      "music": 0.0
+    },
+    {
+      "from": 348.38,
+      "to": 350.08,
+      "sid": 160,
+      "location": 2,
+      "content": "AI帮我们创建了skill",
+      "music": 0.0
+    },
+    {
+      "from": 350.08,
+      "to": 352.26,
+      "sid": 161,
+      "location": 2,
+      "content": "把这个任务里面可以复用的内容",
+      "music": 0.0
+    },
+    {
+      "from": 352.26,
+      "to": 353.54,
+      "sid": 162,
+      "location": 2,
+      "content": "都固化进了知识",
+      "music": 0.0
+    },
+    {
+      "from": 353.54,
+      "to": 354.88,
+      "sid": 163,
+      "location": 2,
+      "content": "这里我让他修改一下",
+      "music": 0.0
+    },
+    {
+      "from": 354.88,
+      "to": 356.78,
+      "sid": 164,
+      "location": 2,
+      "content": "把skill放到项目目录里面",
+      "music": 0.0
+    },
+    {
+      "from": 356.78,
+      "to": 359.06,
+      "sid": 165,
+      "location": 2,
+      "content": "skill成功放到了项目目录下面",
+      "music": 0.0
+    },
+    {
+      "from": 359.06,
+      "to": 360.52,
+      "sid": 166,
+      "location": 2,
+      "content": "现在我们有两个skill了",
+      "music": 0.0
+    },
+    {
+      "from": 360.52,
+      "to": 362.06,
+      "sid": 167,
+      "location": 2,
+      "content": "一个是playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 362.06,
+      "to": 365.02,
+      "sid": 168,
+      "location": 2,
+      "content": "还有一个就是刚才保存评论那个流程的skill",
+      "music": 0.0
+    },
+    {
+      "from": 365.02,
+      "to": 366.76,
+      "sid": 169,
+      "location": 2,
+      "content": "这里我先清理一下上下文",
+      "music": 0.0
+    },
+    {
+      "from": 366.76,
+      "to": 369.06,
+      "sid": 170,
+      "location": 2,
+      "content": "我们再用相同的任务来测试一下",
+      "music": 0.0
+    },
+    {
+      "from": 369.06,
+      "to": 370.7,
+      "sid": 171,
+      "location": 2,
+      "content": "有了excuse的指导以后",
+      "music": 0.0
+    },
+    {
+      "from": 370.7,
+      "to": 371.84,
+      "sid": 172,
+      "location": 2,
+      "content": "效果就不一样了",
+      "music": 0.0
+    },
+    {
+      "from": 371.84,
+      "to": 373.78,
+      "sid": 173,
+      "location": 2,
+      "content": "AI充分吸取了之前的经验",
+      "music": 0.0
+    },
+    {
+      "from": 373.78,
+      "to": 375.62,
+      "sid": 174,
+      "location": 2,
+      "content": "没有再出现多余的动作",
+      "music": 0.0
+    },
+    {
+      "from": 375.62,
+      "to": 376.52,
+      "sid": 175,
+      "location": 2,
+      "content": "也没有报错",
+      "music": 0.0
+    },
+    {
+      "from": 376.52,
+      "to": 379.28,
+      "sid": 176,
+      "location": 2,
+      "content": "用最低的token消耗完美的完成了任务",
+      "music": 0.0
+    },
+    {
+      "from": 379.28,
+      "to": 381.26,
+      "sid": 177,
+      "location": 2,
+      "content": "我们第一次让AI自己摸索",
+      "music": 0.0
+    },
+    {
+      "from": 381.26,
+      "to": 382.12,
+      "sid": 178,
+      "location": 2,
+      "content": "自己试错",
+      "music": 0.0
+    },
+    {
+      "from": 382.12,
+      "to": 384.92,
+      "sid": 179,
+      "location": 2,
+      "content": "用了41%的上下文才完成了任务",
+      "music": 0.0
+    },
+    {
+      "from": 384.92,
+      "to": 386.78,
+      "sid": 180,
+      "location": 2,
+      "content": "第二次有了skills的指导",
+      "music": 0.0
+    },
+    {
+      "from": 386.78,
+      "to": 389.14,
+      "sid": 181,
+      "location": 2,
+      "content": "只用了5%的上下文就完成了任务",
+      "music": 0.0
+    },
+    {
+      "from": 389.14,
+      "to": 391.76,
+      "sid": 182,
+      "location": 2,
+      "content": "通过把过程提炼总结成skills",
+      "music": 0.0
+    },
+    {
+      "from": 391.76,
+      "to": 394.06,
+      "sid": 183,
+      "location": 2,
+      "content": "获得了将近十倍的效率提升",
+      "music": 0.0
+    },
+    {
+      "from": 394.06,
+      "to": 396.12,
+      "sid": 184,
+      "location": 2,
+      "content": "抓取评论是一个固定流程",
+      "music": 0.0
+    },
+    {
+      "from": 396.12,
+      "to": 398.82,
+      "sid": 185,
+      "location": 2,
+      "content": "其实并不需要AI进行智能化的控制",
+      "music": 0.0
+    },
+    {
+      "from": 398.82,
+      "to": 401.58,
+      "sid": 186,
+      "location": 2,
+      "content": "我们可以直接把它编写成一个固定的脚本",
+      "music": 0.0
+    },
+    {
+      "from": 401.58,
+      "to": 402.78,
+      "sid": 187,
+      "location": 2,
+      "content": "这里输入提示词",
+      "music": 0.0
+    },
+    {
+      "from": 402.78,
+      "to": 405.68,
+      "sid": 188,
+      "location": 2,
+      "content": "你把刚才所有的playwright CLI命令",
+      "music": 0.0
+    },
+    {
+      "from": 405.68,
+      "to": 406.9,
+      "sid": 189,
+      "location": 2,
+      "content": "汇总成一个脚本",
+      "music": 0.0
+    },
+    {
+      "from": 406.9,
+      "to": 409.92,
+      "sid": 190,
+      "location": 2,
+      "content": "执行脚本就能获取商品的前100条评论",
+      "music": 0.0
+    },
+    {
+      "from": 409.92,
+      "to": 412.4,
+      "sid": 191,
+      "location": 2,
+      "content": "并且保存到一个CSV文件里面",
+      "music": 0.0
+    },
+    {
+      "from": 412.4,
+      "to": 415.22,
+      "sid": 192,
+      "location": 2,
+      "content": "注意每一步都要有合理的延时与等待",
+      "music": 0.0
+    },
+    {
+      "from": 415.22,
+      "to": 416.46,
+      "sid": 193,
+      "location": 2,
+      "content": "确保任务成功",
+      "music": 0.0
+    },
+    {
+      "from": 416.46,
+      "to": 417.26,
+      "sid": 194,
+      "location": 2,
+      "content": "脚本写完",
+      "music": 0.0
+    },
+    {
+      "from": 417.26,
+      "to": 418.28,
+      "sid": 195,
+      "location": 2,
+      "content": "你先测试一轮",
+      "music": 0.0
+    },
+    {
+      "from": 418.28,
+      "to": 421.02,
+      "sid": 196,
+      "location": 2,
+      "content": "很快codex为我们编写完成了脚本",
+      "music": 0.0
+    },
+    {
+      "from": 421.02,
+      "to": 422.7,
+      "sid": 197,
+      "location": 2,
+      "content": "他已经自己测试通过了",
+      "music": 0.0
+    },
+    {
+      "from": 422.7,
+      "to": 424.7,
+      "sid": 198,
+      "location": 2,
+      "content": "我们来看一下这个脚本长什么样",
+      "music": 0.0
+    },
+    {
+      "from": 424.7,
+      "to": 428.1,
+      "sid": 199,
+      "location": 2,
+      "content": "在我这个windows电脑上就是这么一个power shell的脚本",
+      "music": 0.0
+    },
+    {
+      "from": 428.1,
+      "to": 431.52,
+      "sid": 200,
+      "location": 2,
+      "content": "AA以编程的方式把刚才的步骤都固定下来了",
+      "music": 0.0
+    },
+    {
+      "from": 431.52,
+      "to": 433.44,
+      "sid": 201,
+      "location": 2,
+      "content": "比如第一步打开商品页面",
+      "music": 0.0
+    },
+    {
+      "from": 433.44,
+      "to": 436.56,
+      "sid": 202,
+      "location": 2,
+      "content": "第二步确认浏览器里打开的是正确的URL",
+      "music": 0.0
+    },
+    {
+      "from": 436.56,
+      "to": 439.12,
+      "sid": 203,
+      "location": 2,
+      "content": "第四步点击查看全部评价按钮",
+      "music": 0.0
+    },
+    {
+      "from": 439.12,
+      "to": 441.8,
+      "sid": 204,
+      "location": 2,
+      "content": "第六步执行这个JS脚本获取评论",
+      "music": 0.0
+    },
+    {
+      "from": 441.8,
+      "to": 445.7,
+      "sid": 205,
+      "location": 2,
+      "content": "最后一步把刚才的JSON数据保存成一个CSV文件",
+      "music": 0.0
+    },
+    {
+      "from": 445.7,
+      "to": 446.98,
+      "sid": 206,
+      "location": 2,
+      "content": "我们也来测试一下",
+      "music": 0.0
+    },
+    {
+      "from": 446.98,
+      "to": 448.72,
+      "sid": 207,
+      "location": 2,
+      "content": "我们打开一个命令行终端",
+      "music": 0.0
+    },
+    {
+      "from": 448.72,
+      "to": 451.86,
+      "sid": 208,
+      "location": 2,
+      "content": "输入这个power shell脚本的路径回车执行",
+      "music": 0.0
+    },
+    {
+      "from": 451.86,
+      "to": 453.42,
+      "sid": 209,
+      "location": 2,
+      "content": "这是一个固定的流程",
+      "music": 0.0
+    },
+    {
+      "from": 453.42,
+      "to": 454.9,
+      "sid": 210,
+      "location": 2,
+      "content": "中间没有AI的参与",
+      "music": 0.0
+    },
+    {
+      "from": 454.9,
+      "to": 457.1,
+      "sid": 211,
+      "location": 2,
+      "content": "我们看到这次不再依赖codex了",
+      "music": 0.0
+    },
+    {
+      "from": 457.1,
+      "to": 459.0,
+      "sid": 212,
+      "location": 2,
+      "content": "直接执行这个power shell脚本",
+      "music": 0.0
+    },
+    {
+      "from": 459.0,
+      "to": 461.34,
+      "sid": 213,
+      "location": 2,
+      "content": "0token0成本就完成了任务",
+      "music": 0.0
+    },
+    {
+      "from": 461.34,
+      "to": 462.92,
+      "sid": 214,
+      "location": 2,
+      "content": "还取得了相同的效果",
+      "music": 0.0
+    },
+    {
+      "from": 462.92,
+      "to": 465.88,
+      "sid": 215,
+      "location": 2,
+      "content": "好我们来总结一下这套浏览器自动化的流程",
+      "music": 0.0
+    },
+    {
+      "from": 465.88,
+      "to": 466.88,
+      "sid": 216,
+      "location": 2,
+      "content": "在准备阶段",
+      "music": 0.0
+    },
+    {
+      "from": 466.88,
+      "to": 469.88,
+      "sid": 217,
+      "location": 2,
+      "content": "我们先安装node js play right CLI",
+      "music": 0.0
+    },
+    {
+      "from": 469.88,
+      "to": 471.34,
+      "sid": 218,
+      "location": 2,
+      "content": "还有chrome浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 471.34,
+      "to": 474.22,
+      "sid": 219,
+      "location": 2,
+      "content": "第二步选择你喜爱的AI agent的工具",
+      "music": 0.0
+    },
+    {
+      "from": 474.22,
+      "to": 477.0,
+      "sid": 220,
+      "location": 2,
+      "content": "把play write CLI的skill安装进去",
+      "music": 0.0
+    },
+    {
+      "from": 477.0,
+      "to": 479.36,
+      "sid": 221,
+      "location": 2,
+      "content": "第三步给AA一个复杂的任务",
+      "music": 0.0
+    },
+    {
+      "from": 479.36,
+      "to": 480.46,
+      "sid": 222,
+      "location": 2,
+      "content": "让他自己摸索",
+      "music": 0.0
+    },
+    {
+      "from": 480.46,
+      "to": 481.48,
+      "sid": 223,
+      "location": 2,
+      "content": "并且执行完",
+      "music": 0.0
+    },
+    {
+      "from": 481.48,
+      "to": 485.56,
+      "sid": 224,
+      "location": 2,
+      "content": "第四步让AI把刚才的执行结果提炼总结成skill",
+      "music": 0.0
+    },
+    {
+      "from": 485.56,
+      "to": 487.66,
+      "sid": 225,
+      "location": 2,
+      "content": "之前遇到的坑就不要再踩了",
+      "music": 0.0
+    },
+    {
+      "from": 487.66,
+      "to": 488.3,
+      "sid": 226,
+      "location": 2,
+      "content": "第五步",
+      "music": 0.0
+    },
+    {
+      "from": 488.3,
+      "to": 489.64,
+      "sid": 227,
+      "location": 2,
+      "content": "重视相同的任务",
+      "music": 0.0
+    },
+    {
+      "from": 489.64,
+      "to": 491.44,
+      "sid": 228,
+      "location": 2,
+      "content": "AI在skills的指导下",
+      "music": 0.0
+    },
+    {
+      "from": 491.44,
+      "to": 493.48,
+      "sid": 229,
+      "location": 2,
+      "content": "可以把token的消耗降低十倍",
+      "music": 0.0
+    },
+    {
+      "from": 493.48,
+      "to": 495.52,
+      "sid": 230,
+      "location": 2,
+      "content": "如果是完全固定化的流程",
+      "music": 0.0
+    },
+    {
+      "from": 495.52,
+      "to": 496.7,
+      "sid": 231,
+      "location": 2,
+      "content": "还可以继续进行",
+      "music": 0.0
+    },
+    {
+      "from": 496.7,
+      "to": 497.3,
+      "sid": 232,
+      "location": 2,
+      "content": "第六步",
+      "music": 0.0
+    },
+    {
+      "from": 497.3,
+      "to": 500.12,
+      "sid": 233,
+      "location": 2,
+      "content": "让AI把这个过程直接编写成一个脚本",
+      "music": 0.0
+    },
+    {
+      "from": 500.12,
+      "to": 500.98,
+      "sid": 234,
+      "location": 2,
+      "content": "有了脚本以后",
+      "music": 0.0
+    },
+    {
+      "from": 500.98,
+      "to": 502.9,
+      "sid": 235,
+      "location": 2,
+      "content": "我们甚至可以直接执行这个脚本",
+      "music": 0.0
+    },
+    {
+      "from": 502.9,
+      "to": 503.48,
+      "sid": 236,
+      "location": 2,
+      "content": "完成任务",
+      "music": 0.0
+    },
+    {
+      "from": 503.48,
+      "to": 505.0,
+      "sid": 237,
+      "location": 2,
+      "content": "完全不需要AI参与",
+      "music": 0.0
+    },
+    {
+      "from": 505.0,
+      "to": 507.87,
+      "sid": 238,
+      "location": 2,
+      "content": "把token消耗直接降低到了零",
+      "music": 0.0
+    },
+    {
+      "from": 508.23,
+      "to": 510.07,
+      "sid": 239,
+      "location": 2,
+      "content": "我们再来看一个实战案例",
+      "music": 0.0
+    },
+    {
+      "from": 510.07,
+      "to": 513.56,
+      "sid": 240,
+      "location": 2,
+      "content": "最近爬爬虾把自己的视频用转成图文教程",
+      "music": 0.0
+    },
+    {
+      "from": 513.56,
+      "to": 515.26,
+      "sid": 241,
+      "location": 2,
+      "content": "然后发到各个平台上面",
+      "music": 0.0
+    },
+    {
+      "from": 515.26,
+      "to": 517.52,
+      "sid": 242,
+      "location": 2,
+      "content": "大部分平台发文章都比较简单",
+      "music": 0.0
+    },
+    {
+      "from": 517.52,
+      "to": 521.44,
+      "sid": 243,
+      "location": 2,
+      "content": "唯独有一个平台X发文章的步骤非常的繁琐",
+      "music": 0.0
+    },
+    {
+      "from": 521.44,
+      "to": 524.06,
+      "sid": 244,
+      "location": 2,
+      "content": "这是我的一个markdown格式的笔记文章",
+      "music": 0.0
+    },
+    {
+      "from": 524.06,
+      "to": 526.64,
+      "sid": 245,
+      "location": 2,
+      "content": "我们注意到这个文章是不能直接以",
+      "music": 0.0
+    },
+    {
+      "from": 526.64,
+      "to": 528.28,
+      "sid": 246,
+      "location": 2,
+      "content": "markdown格式粘贴过来的",
+      "music": 0.0
+    },
+    {
+      "from": 528.28,
+      "to": 530.02,
+      "sid": 247,
+      "location": 2,
+      "content": "首先这个格是会错乱",
+      "music": 0.0
+    },
+    {
+      "from": 530.02,
+      "to": 532.44,
+      "sid": 248,
+      "location": 2,
+      "content": "第二个问题是图片都展示不出来",
+      "music": 0.0
+    },
+    {
+      "from": 532.44,
+      "to": 533.88,
+      "sid": 249,
+      "location": 2,
+      "content": "然后我又测试了一下",
+      "music": 0.0
+    },
+    {
+      "from": 533.88,
+      "to": 537.439,
+      "sid": 250,
+      "location": 2,
+      "content": "如果使用HTML格式是可以粘贴的",
+      "music": 0.0
+    },
+    {
+      "from": 537.439,
+      "to": 539.24,
+      "sid": 251,
+      "location": 2,
+      "content": "但是又出现了一个新的问题",
+      "music": 0.0
+    },
+    {
+      "from": 539.24,
+      "to": 540.86,
+      "sid": 252,
+      "location": 2,
+      "content": "图片是粘贴不过来的",
+      "music": 0.0
+    },
+    {
+      "from": 540.86,
+      "to": 543.52,
+      "sid": 253,
+      "location": 2,
+      "content": "图片都变成了这么一个照相机的小符号",
+      "music": 0.0
+    },
+    {
+      "from": 543.52,
+      "to": 545.96,
+      "sid": 254,
+      "location": 2,
+      "content": "我们只能手动先把小照相机删除",
+      "music": 0.0
+    },
+    {
+      "from": 545.96,
+      "to": 547.5,
+      "sid": 255,
+      "location": 2,
+      "content": "然后把图片复制一下",
+      "music": 0.0
+    },
+    {
+      "from": 547.5,
+      "to": 549.3,
+      "sid": 256,
+      "location": 2,
+      "content": "一张张的手动粘贴过来",
+      "music": 0.0
+    },
+    {
+      "from": 549.3,
+      "to": 550.24,
+      "sid": 257,
+      "location": 2,
+      "content": "非常的麻烦",
+      "music": 0.0
+    },
+    {
+      "from": 550.24,
+      "to": 553.0,
+      "sid": 258,
+      "location": 2,
+      "content": "接下来我们就使用前面介绍的自动化流程",
+      "music": 0.0
+    },
+    {
+      "from": 553.0,
+      "to": 555.86,
+      "sid": 259,
+      "location": 2,
+      "content": "把这个发文章的全过程进行AI自动化",
+      "music": 0.0
+    },
+    {
+      "from": 555.86,
+      "to": 559.26,
+      "sid": 260,
+      "location": 2,
+      "content": "这里我还是使用codex帮我编写一个Python脚本",
+      "music": 0.0
+    },
+    {
+      "from": 559.26,
+      "to": 561.56,
+      "sid": 261,
+      "location": 2,
+      "content": "把文章里的图片下载到本地",
+      "music": 0.0
+    },
+    {
+      "from": 561.56,
+      "to": 564.48,
+      "sid": 262,
+      "location": 2,
+      "content": "从001开始编号放到这个文件夹里面",
+      "music": 0.0
+    },
+    {
+      "from": 564.48,
+      "to": 568.0,
+      "sid": 263,
+      "location": 2,
+      "content": "先转换成一个只使用本地图片的markdown文章",
+      "music": 0.0
+    },
+    {
+      "from": 568.0,
+      "to": 569.44,
+      "sid": 264,
+      "location": 2,
+      "content": "然后运行潘dock",
+      "music": 0.0
+    },
+    {
+      "from": 569.44,
+      "to": 573.04,
+      "sid": 265,
+      "location": 2,
+      "content": "把本地图片的markdown文章转换成HTML格式",
+      "music": 0.0
+    },
+    {
+      "from": 573.04,
+      "to": 576.66,
+      "sid": 266,
+      "location": 2,
+      "content": "注意HTML格式里面每张图都应该是独立段落",
+      "music": 0.0
+    },
+    {
+      "from": 576.66,
+      "to": 578.98,
+      "sid": 267,
+      "location": 2,
+      "content": "开始AI帮我们编写好了脚本",
+      "music": 0.0
+    },
+    {
+      "from": 578.98,
+      "to": 580.8,
+      "sid": 268,
+      "location": 2,
+      "content": "并且为我们转换好了文章",
+      "music": 0.0
+    },
+    {
+      "from": 580.8,
+      "to": 584.32,
+      "sid": 269,
+      "location": 2,
+      "content": "我们来看一下图片都放到了这个images文件夹下面",
+      "music": 0.0
+    },
+    {
+      "from": 584.32,
+      "to": 587.76,
+      "sid": 270,
+      "location": 2,
+      "content": "而且已经把文章转换成了HTML格式的好",
+      "music": 0.0
+    },
+    {
+      "from": 587.76,
+      "to": 590.74,
+      "sid": 271,
+      "location": 2,
+      "content": "下一步我们就可以让AI来帮我们自动发文了",
+      "music": 0.0
+    },
+    {
+      "from": 590.74,
+      "to": 591.98,
+      "sid": 272,
+      "location": 2,
+      "content": "我们输入提示词",
+      "music": 0.0
+    },
+    {
+      "from": 591.98,
+      "to": 593.64,
+      "sid": 273,
+      "location": 2,
+      "content": "使用playwright CLI",
+      "music": 0.0
+    },
+    {
+      "from": 593.64,
+      "to": 594.9,
+      "sid": 274,
+      "location": 2,
+      "content": "先打开这个网站",
+      "music": 0.0
+    },
+    {
+      "from": 594.9,
+      "to": 596.22,
+      "sid": 275,
+      "location": 2,
+      "content": "创建一个新的文章",
+      "music": 0.0
+    },
+    {
+      "from": 596.22,
+      "to": 599.08,
+      "sid": 276,
+      "location": 2,
+      "content": "然后把这个HTML的内容粘贴进去",
+      "music": 0.0
+    },
+    {
+      "from": 599.08,
+      "to": 602.4,
+      "sid": 277,
+      "location": 2,
+      "content": "找到所有的这种照相机的这种小图标的位置",
+      "music": 0.0
+    },
+    {
+      "from": 602.4,
+      "to": 604.8,
+      "sid": 278,
+      "location": 2,
+      "content": "先退格键删除掉小图标",
+      "music": 0.0
+    },
+    {
+      "from": 604.8,
+      "to": 607.24,
+      "sid": 279,
+      "location": 2,
+      "content": "然后在图片文件夹里面找到图片",
+      "music": 0.0
+    },
+    {
+      "from": 607.24,
+      "to": 608.36,
+      "sid": 280,
+      "location": 2,
+      "content": "先复制出来",
+      "music": 0.0
+    },
+    {
+      "from": 608.36,
+      "to": 610.26,
+      "sid": 281,
+      "location": 2,
+      "content": "按CTRLV再粘贴进去",
+      "music": 0.0
+    },
+    {
+      "from": 610.26,
+      "to": 613.1,
+      "sid": 282,
+      "location": 2,
+      "content": "这个小icon的数量跟图片的数量是相等的",
+      "music": 0.0
+    },
+    {
+      "from": 613.1,
+      "to": 615.0,
+      "sid": 283,
+      "location": 2,
+      "content": "我需要它按顺序替换好",
+      "music": 0.0
+    },
+    {
+      "from": 615.0,
+      "to": 618.069,
+      "sid": 284,
+      "location": 2,
+      "content": "我们开始AI为我们打开了浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 618.069,
+      "to": 619.689,
+      "sid": 285,
+      "location": 2,
+      "content": "创建了一个新的草稿",
+      "music": 0.0
+    },
+    {
+      "from": 619.689,
+      "to": 622.249,
+      "sid": 286,
+      "location": 2,
+      "content": "把HTML格式的文章粘贴进去了",
+      "music": 0.0
+    },
+    {
+      "from": 622.249,
+      "to": 624.929,
+      "sid": 287,
+      "location": 2,
+      "content": "然后他开始为我们一张张的上传图片",
+      "music": 0.0
+    },
+    {
+      "from": 624.929,
+      "to": 626.68,
+      "sid": 288,
+      "location": 2,
+      "content": "把原来的占位符删除掉",
+      "music": 0.0
+    },
+    {
+      "from": 626.68,
+      "to": 629.02,
+      "sid": 289,
+      "location": 2,
+      "content": "然后一张张地替换成真正的图片",
+      "music": 0.0
+    },
+    {
+      "from": 629.02,
+      "to": 631.92,
+      "sid": 290,
+      "location": 2,
+      "content": "我们看到他正在一张张的帮我们自动化的替换",
+      "music": 0.0
+    },
+    {
+      "from": 631.92,
+      "to": 633.64,
+      "sid": 291,
+      "location": 2,
+      "content": "整个过程非常的顺利",
+      "music": 0.0
+    },
+    {
+      "from": 633.64,
+      "to": 636.92,
+      "sid": 292,
+      "location": 2,
+      "content": "AA把从头开始的全流程整理成一个skill",
+      "music": 0.0
+    },
+    {
+      "from": 636.92,
+      "to": 638.6,
+      "sid": 293,
+      "location": 2,
+      "content": "然后放到项目目录以后",
+      "music": 0.0
+    },
+    {
+      "from": 638.6,
+      "to": 640.84,
+      "sid": 294,
+      "location": 2,
+      "content": "我只要给你一个文章就能自动发布",
+      "music": 0.0
+    },
+    {
+      "from": 640.84,
+      "to": 642.7,
+      "sid": 295,
+      "location": 2,
+      "content": "AI帮我们固化了一个skill",
+      "music": 0.0
+    },
+    {
+      "from": 642.7,
+      "to": 644.6,
+      "sid": 296,
+      "location": 2,
+      "content": "AI为我们编写好了技能",
+      "music": 0.0
+    },
+    {
+      "from": 644.6,
+      "to": 646.32,
+      "sid": 297,
+      "location": 2,
+      "content": "生成了这些配套的脚本",
+      "music": 0.0
+    },
+    {
+      "from": 646.32,
+      "to": 649.62,
+      "sid": 298,
+      "location": 2,
+      "content": "然后这个skills就可以覆盖自动发稿的全流程",
+      "music": 0.0
+    },
+    {
+      "from": 649.62,
+      "to": 650.0,
+      "sid": 299,
+      "location": 2,
+      "content": "以后",
+      "music": 0.0
+    },
+    {
+      "from": 650.0,
+      "to": 651.64,
+      "sid": 300,
+      "location": 2,
+      "content": "我只要给他一个文章路径",
+      "music": 0.0
+    },
+    {
+      "from": 651.64,
+      "to": 653.82,
+      "sid": 301,
+      "location": 2,
+      "content": "告诉他使用这个skill自动发布",
+      "music": 0.0
+    },
+    {
+      "from": 653.82,
+      "to": 656.64,
+      "sid": 302,
+      "location": 2,
+      "content": "它就能自动的帮我把这个文章发布上去",
+      "music": 0.0
+    },
+    {
+      "from": 656.64,
+      "to": 657.32,
+      "sid": 303,
+      "location": 2,
+      "content": "非常的棒",
+      "music": 0.0
+    },
+    {
+      "from": 657.32,
+      "to": 658.74,
+      "sid": 304,
+      "location": 2,
+      "content": "这个skills的源代码",
+      "music": 0.0
+    },
+    {
+      "from": 658.74,
+      "to": 661.14,
+      "sid": 305,
+      "location": 2,
+      "content": "我已经上传到了GITHUB的这个仓库下面",
+      "music": 0.0
+    },
+    {
+      "from": 661.14,
+      "to": 663.66,
+      "sid": 306,
+      "location": 2,
+      "content": "感兴趣的观众朋友们可以来参考试一下",
+      "music": 0.0
+    },
+    {
+      "from": 663.66,
+      "to": 665.5,
+      "sid": 307,
+      "location": 2,
+      "content": "不过我这个是windows电脑的",
+      "music": 0.0
+    },
+    {
+      "from": 665.5,
+      "to": 666.98,
+      "sid": 308,
+      "location": 2,
+      "content": "如果是其他操作系统",
+      "music": 0.0
+    },
+    {
+      "from": 666.98,
+      "to": 669.4,
+      "sid": 309,
+      "location": 2,
+      "content": "可以让AI参考这个skill来改点一下",
+      "music": 0.0
+    },
+    {
+      "from": 669.4,
+      "to": 671.0,
+      "sid": 310,
+      "location": 2,
+      "content": "相信按照我这套流程",
+      "music": 0.0
+    },
+    {
+      "from": 671.0,
+      "to": 674.19,
+      "sid": 311,
+      "location": 2,
+      "content": "大家都可以编写出属于自己的skill",
+      "music": 0.0
+    },
+    {
+      "from": 674.59,
+      "to": 676.93,
+      "sid": 312,
+      "location": 2,
+      "content": "我们这套浏览器自动化流程",
+      "music": 0.0
+    },
+    {
+      "from": 676.93,
+      "to": 679.97,
+      "sid": 313,
+      "location": 2,
+      "content": "一个重要的应用就是对自己写的web app",
+      "music": 0.0
+    },
+    {
+      "from": 679.97,
+      "to": 681.32,
+      "sid": 314,
+      "location": 2,
+      "content": "进行自动化测试",
+      "music": 0.0
+    },
+    {
+      "from": 681.32,
+      "to": 684.9,
+      "sid": 315,
+      "location": 2,
+      "content": "比如这里我开发了一个简历润色美化的网页app",
+      "music": 0.0
+    },
+    {
+      "from": 684.9,
+      "to": 687.04,
+      "sid": 316,
+      "location": 2,
+      "content": "接下来我输入指令阅读代码",
+      "music": 0.0
+    },
+    {
+      "from": 687.04,
+      "to": 689.2,
+      "sid": 317,
+      "location": 2,
+      "content": "把从注册开始的主体流程",
+      "music": 0.0
+    },
+    {
+      "from": 689.2,
+      "to": 690.74,
+      "sid": 318,
+      "location": 2,
+      "content": "写一个中文的测试文档",
+      "music": 0.0
+    },
+    {
+      "from": 690.74,
+      "to": 693.32,
+      "sid": 319,
+      "location": 2,
+      "content": "然后再用playwright CLI打开网页",
+      "music": 0.0
+    },
+    {
+      "from": 693.32,
+      "to": 695.5,
+      "sid": 320,
+      "location": 2,
+      "content": "根据你的测试用例完成测试",
+      "music": 0.0
+    },
+    {
+      "from": 695.5,
+      "to": 699.0,
+      "sid": 321,
+      "location": 2,
+      "content": "开始AI通过阅读代码学习到了这个项目的功能",
+      "music": 0.0
+    },
+    {
+      "from": 699.0,
+      "to": 700.74,
+      "sid": 322,
+      "location": 2,
+      "content": "然后确认了主体流程",
+      "music": 0.0
+    },
+    {
+      "from": 700.74,
+      "to": 702.78,
+      "sid": 323,
+      "location": 2,
+      "content": "接下来他开始编写测试文档",
+      "music": 0.0
+    },
+    {
+      "from": 702.78,
+      "to": 704.12,
+      "sid": 324,
+      "location": 2,
+      "content": "测试文档编写好了",
+      "music": 0.0
+    },
+    {
+      "from": 704.12,
+      "to": 705.6,
+      "sid": 325,
+      "location": 2,
+      "content": "这里包含第一步做什么",
+      "music": 0.0
+    },
+    {
+      "from": 705.6,
+      "to": 706.48,
+      "sid": 326,
+      "location": 2,
+      "content": "第二步做什么",
+      "music": 0.0
+    },
+    {
+      "from": 706.48,
+      "to": 707.56,
+      "sid": 327,
+      "location": 2,
+      "content": "第三步做什么",
+      "music": 0.0
+    },
+    {
+      "from": 707.56,
+      "to": 710.8,
+      "sid": 328,
+      "location": 2,
+      "content": "然后使用PLAYCLI打开了浏览器",
+      "music": 0.0
+    },
+    {
+      "from": 710.8,
+      "to": 712.5,
+      "sid": 329,
+      "location": 2,
+      "content": "它自动点击了注册按钮",
+      "music": 0.0
+    },
+    {
+      "from": 712.5,
+      "to": 713.7,
+      "sid": 330,
+      "location": 2,
+      "content": "创建了测试账号",
+      "music": 0.0
+    },
+    {
+      "from": 713.7,
+      "to": 714.48,
+      "sid": 331,
+      "location": 2,
+      "content": "完成了登录",
+      "music": 0.0
+    },
+    {
+      "from": 714.48,
+      "to": 715.92,
+      "sid": 332,
+      "location": 2,
+      "content": "他创建了一份测试简历",
+      "music": 0.0
+    },
+    {
+      "from": 715.92,
+      "to": 717.24,
+      "sid": 333,
+      "location": 2,
+      "content": "并且上传上来了",
+      "music": 0.0
+    },
+    {
+      "from": 717.24,
+      "to": 718.94,
+      "sid": 334,
+      "location": 2,
+      "content": "完成了主体流程的测试",
+      "music": 0.0
+    },
+    {
+      "from": 718.94,
+      "to": 719.84,
+      "sid": 335,
+      "location": 2,
+      "content": "测试结论是",
+      "music": 0.0
+    },
+    {
+      "from": 719.84,
+      "to": 723.14,
+      "sid": 336,
+      "location": 2,
+      "content": "通过我们也可以要求AI编写更多的测试用例",
+      "music": 0.0
+    },
+    {
+      "from": 723.14,
+      "to": 725.9,
+      "sid": 337,
+      "location": 2,
+      "content": "使用playwright CLI进行全自动的测试",
+      "music": 0.0
+    },
+    {
+      "from": 725.9,
+      "to": 729.26,
+      "sid": 338,
+      "location": 2,
+      "content": "还可以使用open cloud这种带定身任务的agent的框架",
+      "music": 0.0
+    },
+    {
+      "from": 731.62,
+      "to": 733.38,
+      "sid": 339,
+      "location": 2,
+      "content": "一旦我们修改出来了bug",
+      "music": 0.0
+    },
+    {
+      "from": 733.38,
+      "to": 735.06,
+      "sid": 340,
+      "location": 2,
+      "content": "AI就能全自动的发现",
+      "music": 0.0
+    },
+    {
+      "from": 735.06,
+      "to": 738.28,
+      "sid": 341,
+      "location": 2,
+      "content": "并且告诉我们省去了很多的人工测试成本",
+      "music": 0.0
+    },
+    {
+      "from": 738.28,
+      "to": 741.56,
+      "sid": 342,
+      "location": 2,
+      "content": "对我们开发网页app会很有帮助好",
+      "music": 0.0
+    },
+    {
+      "from": 741.56,
+      "to": 743.5,
+      "sid": 343,
+      "location": 2,
+      "content": "这就是本期视频全部内容了",
+      "music": 0.0
+    },
+    {
+      "from": 743.5,
+      "to": 744.92,
+      "sid": 344,
+      "location": 2,
+      "content": "感谢大家点赞支持",
+      "music": 0.0
+    },
+    {
+      "from": 744.92,
+      "to": 746.04,
+      "sid": 345,
+      "location": 2,
+      "content": "我们下期再见",
+      "music": 0.0
+    }
+  ]
+}

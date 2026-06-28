@@ -120,70 +120,69 @@ def _windows_login() -> bool:
 
 def _windows_fetch_subtitle(bvid: str) -> dict:
     """在 Windows 上用 playwright-cli + player/wbi/v2 API 获取字幕 URL。"""
-    import subprocess, time, json, os
+    import subprocess, json, os, tempfile, re
 
     url = f"https://www.bilibili.com/video/{bvid}"
 
-    # 1. 后台打开视频页（persistent，复用登录态）
-    subprocess.Popen(
-        ["powershell.exe", "-NoProfile", "-Command",
-         f'playwright-cli open "{url}" --persistent'],
-        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-    )
-    time.sleep(5)
-
-    # 2. 写 .js 脚本到 Windows temp 目录
+    # 写 JS 脚本（用 + 拼接避免 f-string 花括号冲突）
+    api_url_js = '`https://api.bilibili.com/x/player/wbi/v2?aid=${s.aid}&cid=${s.cid}&bvid=' + bvid + '`'
     js = (
         'async page => {'
-        '  await page.waitForTimeout(2000);'
-        '  const result = await page.evaluate(async () => {'
-        '    const s = window.__INITIAL_STATE__;'
-        '    const resp = await fetch("https://api.bilibili.com/x/player/wbi/v2?aid=" + s.aid + "&cid=" + s.cid + "&bvid=" + s.bvid, {credentials: "include"});'
-        '    const data = await resp.json();'
-        '    const subs = data?.data?.subtitle?.subtitles || [];'
-        '    const target = subs.find(x => x.lan === "ai-zh") || subs.find(x => x.lan === "zh") || subs[0] || {};'
-        '    return JSON.stringify({aid: data.data.aid || s.aid, cid: data.data.cid || s.cid, title: s.videoData.title, subtitle_url: target.subtitle_url || "", language: target.lan_doc || ""});'
-        '  });'
-        '  return result;'
+        '  await page.waitForTimeout(3000);'
+        '  const s = await page.evaluate(() => window.__INITIAL_STATE__);'
+        '  const resp = await page.evaluate(async (fetchUrl) => {'
+        '    const r = await fetch(fetchUrl, {credentials: "include"});'
+        '    const d = await r.json();'
+        '    const subs = d?.data?.subtitle?.subtitles || [];'
+        '    const t = subs.find(x => x.lan === "ai-zh") || subs.find(x => x.lan === "zh") || subs[0] || {};'
+        '    return JSON.stringify({aid: d.data.aid, cid: d.data.cid, url: t.subtitle_url || "", lang: t.lan_doc || ""});'
+        '  }, ' + api_url_js + ');'
+        '  return resp;'
         '}'
     )
-    import tempfile
     js_file = os.path.join(tempfile.gettempdir(), "bili_fetch_wbi.js")
     with open(js_file, "w", encoding="utf-8") as f:
         f.write(js)
 
+    ps_cmd = (
+        f'playwright-cli open "{url}" --persistent; '
+        f'playwright-cli run-code --filename "{js_file}"; '
+        f'playwright-cli close'
+    )
     result = subprocess.run(
-        ["powershell.exe", "-NoProfile", "-Command",
-         f'playwright-cli run-code --filename "{js_file}"'],
-        capture_output=True, timeout=30,
+        ["powershell.exe", "-NoProfile", "-Command", ps_cmd],
+        capture_output=True, timeout=60,
     )
 
-    # 3. 解析输出
     raw = result.stdout
     txt = ""
     for enc in ['utf-8-sig', 'utf-16', 'utf-8']:
         try:
-            t = raw.decode(enc).strip()
-            m = re.search(r'({.*})', t, re.DOTALL)
-            if m: txt = m.group(1); break
-        except: pass
+            decoded = raw.decode(enc)
+            m = re.search(r'### Result\s*\n(.+)', decoded)
+            if m:
+                result_line = m.group(1).strip()
+                txt = json.loads(result_line)
+                break
+        except:
+            pass
 
-    meta = json.loads(txt) if txt else {}
-    subtitle_url = meta.get("subtitle_url", "")
+    meta = {}
+    if txt:
+        try:
+            meta = json.loads(txt) if isinstance(txt, str) else txt
+        except:
+            pass
+
+    subtitle_url = meta.get("url", meta.get("subtitle_url", ""))
     if subtitle_url and subtitle_url.startswith("//"):
         subtitle_url = "https:" + subtitle_url
-
-    # 4. 关闭浏览器
-    subprocess.run(
-        ["powershell.exe", "-NoProfile", "-Command", "playwright-cli close"],
-        timeout=5, capture_output=True,
-    )
 
     return {
         "aid": meta.get("aid", 0), "cid": meta.get("cid", 0),
         "title": meta.get("title", bvid),
         "subtitle_url": subtitle_url,
-        "language": meta.get("language", ""),
+        "language": meta.get("lang", meta.get("language", "")),
         "chapters": [],
     }
 

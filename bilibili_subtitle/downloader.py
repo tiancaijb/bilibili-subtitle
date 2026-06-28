@@ -124,20 +124,20 @@ def _windows_fetch_subtitle(bvid: str) -> dict:
 
     url = f"https://www.bilibili.com/video/{bvid}"
 
-    # 写 JS 脚本（用 + 拼接避免 f-string 花括号冲突）
+    # 写 JS 脚本
     api_url_js = '`https://api.bilibili.com/x/player/wbi/v2?aid=${s.aid}&cid=${s.cid}&bvid=' + bvid + '`'
     js = (
         'async page => {'
         '  await page.waitForTimeout(3000);'
-        '  const s = await page.evaluate(() => window.__INITIAL_STATE__);'
-        '  const resp = await page.evaluate(async (fetchUrl) => {'
-        '    const r = await fetch(fetchUrl, {credentials: "include"});'
+        '  const result = await page.evaluate(async () => {'
+        '    const s = window.__INITIAL_STATE__;'
+        '    const r = await fetch(`https://api.bilibili.com/x/player/wbi/v2?aid=${s.aid}&cid=${s.cid}&bvid=' + bvid + '`, {credentials: "include"});'
         '    const d = await r.json();'
         '    const subs = d?.data?.subtitle?.subtitles || [];'
         '    const t = subs.find(x => x.lan === "ai-zh") || subs.find(x => x.lan === "zh") || subs[0] || {};'
-        '    return JSON.stringify({aid: d.data.aid, cid: d.data.cid, url: t.subtitle_url || "", lang: t.lan_doc || ""});'
-        '  }, ' + api_url_js + ');'
-        '  return resp;'
+        '    return JSON.stringify({title: s.videoData.title, aid: d.data.aid, cid: d.data.cid, url: t.subtitle_url || "", lang: t.lan_doc || ""});'
+        '  });'
+        '  return result;'
         '}'
     )
     js_file = os.path.join(tempfile.gettempdir(), "bili_fetch_wbi.js")
